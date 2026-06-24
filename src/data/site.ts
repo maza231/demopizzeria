@@ -1,7 +1,7 @@
 // Dati segnaposto della pizzeria.
 // Sostituisci questi valori con quelli reali (nome, indirizzo, telefono, orari).
 export const site = {
-  name: "Forno Vivo",
+  name: "Forno Manuel",
   tagline: "Pizzeria · Forno a legna",
   phone: "+39 000 000 0000",
   address: "Via della Pizza 12, 00100 Roma",
