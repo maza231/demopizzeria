@@ -61,22 +61,25 @@ export default function MenuSection() {
         </div>
 
         <div className="mt-12 space-y-12">
-          {menu.map((category, catIndex) => (
-            <div key={category.id}>
-              <h3 className="mb-5 text-sm font-bold uppercase tracking-widest text-charcoal/50">
-                {category.title}
-              </h3>
-              <ul className="grid gap-4 md:grid-cols-2">
-                {category.pizzas.map((pizza, i) => (
-                  <PizzaCard
-                    key={pizza.name}
-                    pizza={pizza}
-                    lock={catIndex * 10 + i + 1}
-                  />
-                ))}
-              </ul>
-            </div>
-          ))}
+          {(() => {
+            let pizzaIndex = 0;
+            return menu.map((category) => (
+              <div key={category.id}>
+                <h3 className="mb-5 text-sm font-bold uppercase tracking-widest text-charcoal/50">
+                  {category.title}
+                </h3>
+                <ul className="grid gap-4 md:grid-cols-2">
+                  {category.pizzas.map((pizza) => (
+                    <PizzaCard
+                      key={pizza.name}
+                      pizza={pizza}
+                      lock={(pizzaIndex += 1)}
+                    />
+                  ))}
+                </ul>
+              </div>
+            ));
+          })()}
         </div>
       </div>
     </section>

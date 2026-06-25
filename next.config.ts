@@ -2,11 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // Immagini fittizie a tema pizza (loremflickr). Da sostituire con foto reali.
+    // Foto a tema pizza da Unsplash. Da sostituire con foto reali del locale.
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "loremflickr.com",
+        hostname: "images.unsplash.com",
       },
     ],
   },

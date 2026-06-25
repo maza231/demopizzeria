@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { site } from "@/data/site";
-import { pizzaImage } from "@/lib/images";
+import { heroImage } from "@/lib/images";
 
 export default function Hero() {
   return (
@@ -68,7 +68,7 @@ export default function Hero() {
         {/* Immagine fittizia (sostituibile con una foto reale) */}
         <div className="relative aspect-square w-full overflow-hidden rounded-3xl bg-sand ring-1 ring-charcoal/5">
           <Image
-            src={pizzaImage(20, 800)}
+            src={heroImage(800)}
             alt="Pizza appena sfornata"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
