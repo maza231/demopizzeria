@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Forno Vivo · Pizzeria",
+  title: "Forno Antico · Pizzeria",
   description:
-    "Pizzeria Forno Vivo — pizza cotta nel forno a legna. Scopri il menu e prenota il tuo tavolo online, senza dover chiamare.",
+    "Pizzeria Forno Antico — pizza cotta nel forno a legna. Progetto dimostrativo con menu digitale e modulo di prenotazione non attivo.",
 };
 
 export default function RootLayout({

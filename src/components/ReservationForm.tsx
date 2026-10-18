@@ -27,11 +27,11 @@ export default function ReservationForm() {
             Prenota
           </span>
           <h2 className="mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">
-            Prenota senza chiamare
+            Prova la prenotazione
           </h2>
           <p className="mt-4 max-w-md text-lg text-cream/70">
-            Scegli giorno, ora e numero di persone. Riceverai conferma dal
-            ristorante. Vuoi solo ordinare le pizze? Seleziona “Asporto”.
+            Modulo dimostrativo: prenotazioni e ordini non sono attivi.
+            Nessun dato viene inviato e non riceverai conferme dal ristorante.
           </p>
 
           <div className="mt-8 inline-flex rounded-full border border-cream/15 bg-cream/5 p-1">
@@ -62,17 +62,17 @@ export default function ReservationForm() {
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-basil/15 text-2xl text-basil">
                 ✓
               </div>
-              <h3 className="mt-4 text-2xl font-bold">Richiesta inviata!</h3>
+              <h3 className="mt-4 text-2xl font-bold">Simulazione completata</h3>
               <p className="mt-2 max-w-xs text-charcoal/65">
                 Questa è una demo: la prenotazione non è stata realmente inviata.
-                Collegheremo email o database in un secondo momento.
+                Nessun ordine o tavolo viene confermato.
               </p>
               <button
                 type="button"
                 onClick={() => setSent(false)}
                 className="mt-6 rounded-full border border-charcoal/15 px-5 py-2.5 text-sm font-semibold transition-colors hover:border-charcoal/30"
               >
-                Nuova richiesta
+                Riprova la demo
               </button>
             </div>
           ) : (
@@ -168,7 +168,7 @@ export default function ReservationForm() {
                 type="submit"
                 className="w-full rounded-full bg-tomato px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-tomato-dark"
               >
-                {mode === "tavolo" ? "Prenota il tavolo" : "Invia ordine"}
+                {mode === "tavolo" ? "Simula prenotazione" : "Simula ordine"}
               </button>
               <p className="text-center text-xs text-charcoal/45">
                 Demo — nessun dato viene realmente inviato.
